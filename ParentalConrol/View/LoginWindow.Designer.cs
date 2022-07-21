@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this._loginGroupBox = new System.Windows.Forms.GroupBox();
-            this._messageLabel = new System.Windows.Forms.Label();
-            this._passwordTextBox = new System.Windows.Forms.TextBox();
-            this._cancelButton = new System.Windows.Forms.Button();
-            this._okButton = new System.Windows.Forms.Button();
+            this.messageLabel = new System.Windows.Forms.Label();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.cancelButton = new System.Windows.Forms.Button();
+            this.okButton = new System.Windows.Forms.Button();
             this._textLabel = new System.Windows.Forms.Label();
             this._loginGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -40,10 +40,10 @@
             // _loginGroupBox
             // 
             this._loginGroupBox.Controls.Add(this._textLabel);
-            this._loginGroupBox.Controls.Add(this._messageLabel);
-            this._loginGroupBox.Controls.Add(this._passwordTextBox);
-            this._loginGroupBox.Controls.Add(this._cancelButton);
-            this._loginGroupBox.Controls.Add(this._okButton);
+            this._loginGroupBox.Controls.Add(this.messageLabel);
+            this._loginGroupBox.Controls.Add(this.passwordTextBox);
+            this._loginGroupBox.Controls.Add(this.cancelButton);
+            this._loginGroupBox.Controls.Add(this.okButton);
             this._loginGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(177)))), ((int)(((byte)(191)))));
             this._loginGroupBox.Location = new System.Drawing.Point(3, 3);
             this._loginGroupBox.Name = "_loginGroupBox";
@@ -52,46 +52,47 @@
             this._loginGroupBox.TabStop = false;
             this._loginGroupBox.Text = "Авторизация";
             // 
-            // _messageLabel
+            // messageLabel
             // 
-            this._messageLabel.AutoSize = true;
-            this._messageLabel.Location = new System.Drawing.Point(6, 102);
-            this._messageLabel.Name = "_messageLabel";
-            this._messageLabel.Size = new System.Drawing.Size(0, 15);
-            this._messageLabel.TabIndex = 3;
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Location = new System.Drawing.Point(6, 102);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(0, 15);
+            this.messageLabel.TabIndex = 3;
             // 
-            // _passwordTextBox
+            // passwordTextBox
             // 
-            this._passwordTextBox.Location = new System.Drawing.Point(6, 76);
-            this._passwordTextBox.MaxLength = 4;
-            this._passwordTextBox.Name = "_passwordTextBox";
-            this._passwordTextBox.PasswordChar = '*';
-            this._passwordTextBox.Size = new System.Drawing.Size(182, 23);
-            this._passwordTextBox.TabIndex = 2;
+            this.passwordTextBox.Location = new System.Drawing.Point(6, 76);
+            this.passwordTextBox.MaxLength = 4;
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.PasswordChar = '*';
+            this.passwordTextBox.Size = new System.Drawing.Size(182, 23);
+            this.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.passwordTextBox.TabIndex = 2;
             // 
-            // _cancelButton
+            // cancelButton
             // 
-            this._cancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(177)))), ((int)(((byte)(191)))));
-            this._cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._cancelButton.ForeColor = System.Drawing.Color.Black;
-            this._cancelButton.Location = new System.Drawing.Point(6, 163);
-            this._cancelButton.Name = "_cancelButton";
-            this._cancelButton.Size = new System.Drawing.Size(182, 23);
-            this._cancelButton.TabIndex = 1;
-            this._cancelButton.Text = "Cancel";
-            this._cancelButton.UseVisualStyleBackColor = false;
+            this.cancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(177)))), ((int)(((byte)(191)))));
+            this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelButton.ForeColor = System.Drawing.Color.Black;
+            this.cancelButton.Location = new System.Drawing.Point(6, 163);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(182, 23);
+            this.cancelButton.TabIndex = 1;
+            this.cancelButton.Text = "Cancel";
+            this.cancelButton.UseVisualStyleBackColor = false;
             // 
-            // _okButton
+            // okButton
             // 
-            this._okButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(177)))), ((int)(((byte)(191)))));
-            this._okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this._okButton.ForeColor = System.Drawing.Color.Black;
-            this._okButton.Location = new System.Drawing.Point(6, 134);
-            this._okButton.Name = "_okButton";
-            this._okButton.Size = new System.Drawing.Size(182, 23);
-            this._okButton.TabIndex = 0;
-            this._okButton.Text = "OK!";
-            this._okButton.UseVisualStyleBackColor = false;
+            this.okButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(177)))), ((int)(((byte)(191)))));
+            this.okButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.okButton.ForeColor = System.Drawing.Color.Black;
+            this.okButton.Location = new System.Drawing.Point(6, 134);
+            this.okButton.Name = "okButton";
+            this.okButton.Size = new System.Drawing.Size(182, 23);
+            this.okButton.TabIndex = 0;
+            this.okButton.Text = "OK!";
+            this.okButton.UseVisualStyleBackColor = false;
             // 
             // _textLabel
             // 
@@ -123,10 +124,10 @@
         #endregion
 
         private GroupBox _loginGroupBox;
-        private TextBox _passwordTextBox;
-        private Button _cancelButton;
-        private Button _okButton;
-        private Label _messageLabel;
+        private TextBox passwordTextBox;
+        private Button cancelButton;
+        private Button okButton;
+        private Label messageLabel;
         private Label _textLabel;
     }
 }

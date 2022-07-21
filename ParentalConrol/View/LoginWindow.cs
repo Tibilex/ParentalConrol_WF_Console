@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +14,12 @@ namespace ParentalConrol.View
     public partial class LoginWindow : Form
     {
         public MainWindow mainWindow { get; set; }
-
+        private int _password = 1111;
         public LoginWindow()
         {
             InitializeComponent();
-            _okButton.Click += OkButton_Click;
-            _cancelButton.Click += CancelButton_Click;
+            okButton.Click += OkButton_Click;
+            cancelButton.Click += CancelButton_Click;
         }
 
         private void CancelButton_Click(object? sender, EventArgs e)
@@ -29,15 +30,16 @@ namespace ParentalConrol.View
 
         private void OkButton_Click(object? sender, EventArgs e)
         {
-            if(_passwordTextBox.Text == "1111")
+            if(passwordTextBox.Text == _password.ToString())
             {
+                Registry.CurrentUser.CreateSubKey(@"SOFTWARE\Parent Control").SetValue("LoginKey", _password);
                 this.Close();
                 mainWindow.Show();
             }
             else
             {
-                _messageLabel.ForeColor = Color.FromArgb(237, 123, 126);
-                _messageLabel.Text = "Неправильный пароль";
+                messageLabel.ForeColor = Color.FromArgb(237, 123, 126);
+                messageLabel.Text = "Неправильный пароль";
             }
         }
     }
