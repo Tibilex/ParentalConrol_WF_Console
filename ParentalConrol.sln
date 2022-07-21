@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParentalConrol", "ParentalConrol\ParentalConrol.csproj", "{51C947CB-86F1-46F9-A2B2-F996E5A652B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParentalConrol", "ParentalConrol\ParentalConrol.csproj", "{51C947CB-86F1-46F9-A2B2-F996E5A652B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParentalControlTray", "ParentalControlTray\ParentalControlTray.csproj", "{84D77E66-431E-430F-A572-B919728AE759}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParentalControlService", "ParentalControlService\ParentalControlService.csproj", "{80CC598F-0808-4165-AEF6-9B0E8462FA61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{51C947CB-86F1-46F9-A2B2-F996E5A652B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51C947CB-86F1-46F9-A2B2-F996E5A652B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51C947CB-86F1-46F9-A2B2-F996E5A652B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84D77E66-431E-430F-A572-B919728AE759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84D77E66-431E-430F-A572-B919728AE759}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84D77E66-431E-430F-A572-B919728AE759}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84D77E66-431E-430F-A572-B919728AE759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80CC598F-0808-4165-AEF6-9B0E8462FA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80CC598F-0808-4165-AEF6-9B0E8462FA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80CC598F-0808-4165-AEF6-9B0E8462FA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80CC598F-0808-4165-AEF6-9B0E8462FA61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
